@@ -153,7 +153,7 @@ class Feed
      *
      * @return void
      */
-    public function add($title, $author, $link, $pubdate, $description, $content='', $enclosure = [], $category='')
+    public function add($title, $author, $link, $pubdate, $description, $content='', $enclosure = [], $category='', $customData = [])
     {
         // append ... to description
         $append = '';
@@ -176,7 +176,8 @@ class Feed
             'description' => $description,
             'content' => $content,
             'enclosure' => $enclosure,
-            'category' => $category
+            'category' => $category,
+            'customData' => $customData
         ]);
     }
 
