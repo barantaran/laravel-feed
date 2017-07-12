@@ -150,6 +150,7 @@ class Feed
      * @param string $content
      * @param array $enclosure (optional)
      * @param string $category (optional)
+     * @param string $extraData (optional)
      *
      * @return void
      */
